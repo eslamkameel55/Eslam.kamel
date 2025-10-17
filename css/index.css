@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap");
+
+/* ======== Global Style Start ========= */
+:root {
+  --dark-section: #080808;
+  --light-section: #fff;
+  --txt-color-primary: #9c9c9c;
+  --txt-color-secondary: #3f8e00;
+  --border-color: #62ba1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-green {
+  background-color: var(--txt-color-secondary);
+  color: var(--light-section);
+  width: fit-content;
+  box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+  border-color: var(--border-color) !important;
+  transition: 0.4s;
+}
+
+.section-header {
+  width: 50%;
+}
+
+.section-header .desc {
+  color: var(--txt-color-primary);
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 991px) {
+  .section-header {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-header {
+    width: 100%;
+  }
+}
+
+/* ======== Global Style End ========= */
+/* ======== Header Start ========= */
+header {
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1b1b1b;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1140px) {
+  header {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    overflow: hidden;
+    top: 70px;
+    height: 0;
+  }
+}
+
+header .nav-link {
+  font-size: 18px;
+  color: var(--txt-color-primary);
+}
+
+header .nav-link:is(:hover, :focus) {
+  color: var(--border-color);
+}
+
+header .social-link a {
+  width: 25px;
+  height: 25px;
+}
+
+header .social-link a img {
+  transition: 0.4s;
+}
+
+header .social-link a img:first-child {
+  opacity: 1;
+}
+
+header .social-link a img:last-child {
+  opacity: 0;
+}
+
+header .social-link a:hover img:first-child {
+  opacity: 0;
+}
+
+header .social-link a:hover img:last-child {
+  opacity: 1;
+}
+/* ======== Header End ========= */
+/* ======== Menu Items Start ========= */
+.menu-item {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  top: 10px;
+}
+
+.menu-item .toggle {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  gap: 10px;
+  transition-duration: 0.3s;
+}
+
+.menu-item .bars {
+  height: 4px;
+  background-color: var(--border-color);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+.menu-item #checkbox:checked + .toggle #bar2 {
+  transform: translateY(14px) rotate(60deg);
+  margin-left: 0;
+  transform-origin: right;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+
+.menu-item #checkbox:checked + .toggle #bar1 {
+  transform: translateY(28px) rotate(-60deg);
+  transition-duration: 0.3s;
+  transform-origin: left;
+  z-index: 1;
+}
+
+.menu-item #checkbox:checked + .toggle {
+  transform: rotate(-90deg);
+}
+
+/* ======== Menu Items End ========= */
+/* ======== Hero Start ========= */
+.hero {
+  background-color: var(--dark-section);
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 100px 0 !important;
+  }
+}
+
+.hero img {
+  width: 70%;
+}
+
+.hero .title {
+  font-size: 44px;
+  color: var(--light-section);
+}
+
+.hero .desc {
+  line-height: 1.8;
+  color: var(--txt-color-primary);
+}
+
+.hero .client-logos img {
+  opacity: 0.3;
+}
+/* ======== Hero End ========= */
+/* ======== Case Study Start ========= */
+.case-study .case-tag {
+  font-size: 12px;
+}
+
+.case-study .tag-fintech {
+  color: #ffa217;
+  background-color: #fff6e9;
+}
+
+.case-study .btn-fintech {
+  color: var(--light-section);
+  background-color: #ffa217;
+}
+
+.case-study .tag-edtech {
+  color: #000aff;
+  background-color: #d0e6ff;
+}
+
+.case-study .btn-edtech {
+  color: var(--light-section);
+  background-color: #000aff;
+}
+
+.case-study .tag-pharma {
+  color: #2ab090;
+  background-color: #e0fff8;
+}
+
+.case-study .btn-pharma {
+  color: var(--light-section);
+  background-color: #2ab090;
+}
+/* ======== Case Study End ========= */
+/* ======== Testimonials Start ========= */
+.testimonials {
+  background-color: var(--dark-section);
+}
+
+.testimonials .testimonial-card {
+  border-color: var(--txt-color-primary) !important;
+}
+
+.testimonials .testimonial-desc {
+  color: var(--txt-color-primary);
+}
+
+.testimonials img {
+  width: 50px;
+}
+/* ======== Testimonials End ========= */
+/* ======== Contact Start ========= */
+.contact {
+  background-color: var(--dark-section);
+}
+
+.contact .form-control {
+  margin-bottom: 1rem;
+}
+/* ======== Contact End ========= */
+/* ======== Progress Bar Start ========= */
+.progress-bar-container {
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999999;
+}
+
+.progress-bar-container .progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    var(--txt-color-secondary) 60%,
+    var(--border-color) 100%
+  );
+  border-radius: 10px;
+  transition: height 0.3s cubic-bezier(0.4, 2, 0.3, 1);
+}
+/* ======== Progress Bar End ========= */

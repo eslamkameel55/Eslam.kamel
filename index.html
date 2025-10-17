@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Progress Bar -->
+    <div class="progress-bar-container position-fixed">
+      <span class="progress-bar"></span>
+    </div>
+    <!-- Menu Items -->
+    <div class="menu-item d-md-none position-fixed">
+      <input id="checkbox" class="d-none" type="checkbox" />
+      <label
+        class="toggle d-flex justify-content-center align-items-center position-relative flex-column"
+        for="checkbox"
+      >
+        <div id="bar1" class="bars w-100"></div>
+        <div id="bar2" class="bars w-100"></div>
+        <div id="bar3" class="bars w-100"></div>
+      </label>
+    </div>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-center py-md-3 position-fixed">
+      <div class="container d-flex justify-content-center align-items-center">
+        <ul class="nav nav-pills column-gap-1 column-gap-xl-5">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">case studies</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">recent work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-capitalize">get in touch</a>
+          </li>
+          <li
+            class="social-link list-style-none mb-0 d-flex gap-3 align-items-center"
+          >
+            <a href="#" class="d-block position-relative">
+              <img
+                class="position-absolute"
+                src="images/linkedin-fill.svg"
+                alt=""
+              />
+              <img
+                class="position-absolute"
+                src="images/linkedin-fill-hover.svg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="d-block position-relative">
+              <img
+                class="position-absolute"
+                src="images/behance-fill.svg"
+                alt=""
+              />
+              <img
+                class="position-absolute"
+                src="images/behance-fill-hover.svg"
+                alt=""
+              />
+            </a>
+            <a href="#" class="d-block position-relative">
+              <img
+                class="position-absolute"
+                src="images/twitter-fill.svg"
+                alt=""
+              />
+              <img
+                class="position-absolute"
+                src="images/twitter-fill-hover.svg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="hero text-center d-flex align-items-center align-items-md-end py-2 py-md-5"
+    >
+      <div class="container px-5">
+        <div class="row row-gap-4 align-items-center">
+          <div
+            class="col-12 col-md-6 text-center text-md-start d-flex flex-column row-gap-4 user-select-none align-items-center align-items-md-start"
+          >
+            <h1 class="title">Your Name Here</h1>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+              aperiam et id temporibus veniam qui quas voluptatum quasi!
+            </p>
+            <a
+              href="#"
+              class="text-light btn border-1 rounded-0 btn-green py-3 px-5"
+            >
+              Let's get Started
+            </a>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img src="images/Hero.jpg" alt="Hero" class="rounded-circle" />
+          </div>
+          <div class="col-12 d-flex row-cols-4 flex-column">
+            <span class="title fs-6 col-12 mb-3 text-start">Worked with</span>
+            <ul
+              class="list-unstyled d-flex flex-wrap mb-0 gap-3 justify-content-around client-logos w-100 align-items-center"
+            >
+              <li
+                class="col-5 col-md-2 d-flex justify-content-center align-items-center"
+              >
+                <img src="images/clickup.svg" alt="clickup" />
+              </li>
+              <li
+                class="col-5 col-md-2 d-flex justify-content-center align-items-center"
+              >
+                <img src="images/Dropbox.svg" alt="Dropbox" />
+              </li>
+              <li
+                class="col-5 col-md-2 d-flex justify-content-center align-items-center"
+              >
+                <img src="images/Paychex.svg" alt="Paychex" />
+              </li>
+              <li
+                class="col-5 col-md-2 d-flex justify-content-center align-items-center"
+              >
+                <img src="images/Elastic.svg" alt="Elastic" />
+              </li>
+              <li
+                class="col-5 col-md-2 d-flex justify-content-center align-items-center"
+              >
+                <img src="images/Stripe.svg" alt="Stripe" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Case Studies Section -->
+    <section class="case-study p-5 container">
+      <div
+        class="section-header d-flex flex-column mb-5 text-center row-gap-3 mx-auto"
+      >
+        <h2 class="title text-capitalize">case studies</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          dolor temporibus totam, tenetur id quidem quibusdam itaque aliquid eum
+          hic.
+        </p>
+      </div>
+      <!-- Case Study 1 -->
+      <div class="row align-items-center justify-content-center gap-5 mb-5">
+        <div class="col-md-5 col-lg-4 col-12 text-center text-md-start">
+          <span
+            class="case-tag fw-bold px-3 user-select-none rounded-3 tag-fintech"
+            >Fintech</span
+          >
+          <h3 class="case-title fw-bold my-3 text-capitalize">
+            work name here
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            similique ab quo dolorem, earum delectus dolores facilis veniam?
+          </p>
+          <button class="btn fw-bold px-3 btn-fintech">
+            View case study &gt;
+          </button>
+        </div>
+        <div class="image col-md-5 col-lg-4 col-12">
+          <img
+            src="images/case-1.jpg"
+            alt="case-1"
+            class="case-image object-fit-contain w-100 h-100"
+          />
+        </div>
+      </div>
+      <!-- Case Study 2 -->
+      <div
+        class="row align-items-center flex-md-row-reverse justify-content-center gap-5 mb-5"
+      >
+        <div class="col-md-5 col-lg-4 col-12 text-center text-md-start">
+          <span
+            class="case-tag fw-bold px-3 user-select-none rounded-3 tag-edtech"
+            >Edtech</span
+          >
+          <h3 class="case-title fw-bold my-3 text-capitalize">
+            work name here
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            similique ab quo dolorem, earum delectus dolores facilis veniam?
+          </p>
+          <button class="btn fw-bold px-3 btn-edtech">
+            View case study &gt;
+          </button>
+        </div>
+        <div class="image col-md-5 col-lg-4 col-12">
+          <img
+            src="images/case-2.svg"
+            alt="case-2"
+            class="case-image object-fit-contain w-100 h-100"
+          />
+        </div>
+      </div>
+      <!-- Case Study 3 -->
+      <div class="row align-items-center justify-content-center gap-5 mb-5">
+        <div class="col-md-5 col-lg-4 col-12 text-center text-md-start">
+          <span
+            class="case-tag fw-bold px-3 user-select-none rounded-3 tag-pharma"
+            >Pharma</span
+          >
+          <h3 class="case-title fw-bold my-3 text-capitalize">
+            work name here
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            similique ab quo dolorem, earum delectus dolores facilis veniam?
+          </p>
+          <button class="btn fw-bold px-3 btn-pharma">
+            View case study &gt;
+          </button>
+        </div>
+        <div class="image col-md-5 col-lg-4 col-12">
+          <img
+            src="images/case-1.jpg"
+            alt="case-1"
+            class="case-image object-fit-contain w-100 h-100"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5 text-light">
+      <div class="container">
+        <div
+          class="section-header d-flex flex-column mb-5 text-center row-gap-3 mx-auto"
+        >
+          <h2 class="title text-capitalize">testimonials</h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur dolor temporibus totam, tenetur id quidem quibusdam
+            itaque aliquid eum hic.
+          </p>
+        </div>
+        <div class="row justify-content-center gap-5 px-4">
+          <!-- Card 1 -->
+          <div
+            class="testimonial-card col-12 col-lg-4 border border-2 rounded-1 d-flex justify-content-between flex-column py-3 px-5"
+          >
+            <p class="testimonial-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates aut eveniet eligendi adipisci suscipit tempore quo at
+              ad?
+            </p>
+            <div class="client-info d-flex align-items-center column-gap-2">
+              <img
+                src="images/avatar.jpg"
+                alt="avatar"
+                class="client-img rounded-circle"
+              />
+              <p class="client-name mb-0 text-capitalize">client name</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="testimonial-card col-12 col-lg-4 border border-2 rounded-1 d-flex justify-content-between flex-column py-3 px-5"
+          >
+            <p class="testimonial-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates aut eveniet eligendi adipisci suscipit tempore quo at
+              ad?
+            </p>
+            <div class="client-info d-flex align-items-center column-gap-2">
+              <img
+                src="images/avatar.jpg"
+                alt="avatar"
+                class="client-img rounded-circle"
+              />
+              <p class="client-name mb-0 text-capitalize">client name</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="testimonial-card col-12 col-lg-4 border border-2 rounded-1 d-flex justify-content-between flex-column py-3 px-5"
+          >
+            <p class="testimonial-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates aut eveniet eligendi adipisci suscipit tempore quo at
+              ad?
+            </p>
+            <div class="client-info d-flex align-items-center column-gap-2">
+              <img
+                src="images/avatar.jpg"
+                alt="avatar"
+                class="client-img rounded-circle"
+              />
+              <p class="client-name mb-0 text-capitalize">client name</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="testimonial-card col-12 col-lg-4 border border-2 rounded-1 d-flex justify-content-between flex-column py-3 px-5"
+          >
+            <p class="testimonial-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates aut eveniet eligendi adipisci suscipit tempore quo at
+              ad?
+            </p>
+            <div class="client-info d-flex align-items-center column-gap-2">
+              <img
+                src="images/avatar.jpg"
+                alt="avatar"
+                class="client-img rounded-circle"
+              />
+              <p class="client-name mb-0 text-capitalize">client name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recent Work Section -->
+    <section class="recent-work container py-5">
+      <div
+        class="section-header d-flex flex-column mb-5 text-center row-gap-3 mx-auto"
+      >
+        <h2 class="title text-capitalize">recent work</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          dolor temporibus totam, tenetur id quidem quibusdam itaque aliquid eum
+          hic.
+        </p>
+      </div>
+      <div class="row gap-5 justify-content-center">
+        <div
+          class="recent-work-img col-12 col-md-5 d-flex flex-column align-items-start gap-2"
+        >
+          <img src="images/work-1.jpg" alt="work-1" class="w-100" />
+          <h5 class="fw-bold text-capitalize">work name here</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="btn btn-green py-2 px-3 rounded-0 border-1"
+            >know more &gt;</a
+          >
+        </div>
+        <div
+          class="recent-work-img col-12 col-md-5 d-flex flex-column align-items-start gap-2"
+        >
+          <img src="images/work-2.svg" alt="work-2" class="w-100" />
+          <h5 class="fw-bold text-capitalize">work name here</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="btn btn-green py-2 px-3 rounded-0 border-1"
+            >know more &gt;</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact text-light py-5">
+      <div class="container">
+        <div
+          class="section-header d-flex flex-column mb-5 text-center row-gap-3 mx-auto"
+        >
+          <h2 class="title text-capitalize">get in touch</h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur dolor temporibus totam, tenetur id quidem quibusdam
+            itaque aliquid eum hic.
+          </p>
+        </div>
+        <form action="#" class="mx-auto col-xl-4 col-lg-6 col-md-8 col-12">
+          <span class="input-header text-capitalize ps-2 mb-2 d-block">
+            email
+          </span>
+          <input
+            type="email"
+            name="email"
+            class="form-control rounded-1"
+            placeholder="Enter your email"
+          />
+          <span class="input-header text-capitalize ps-2 mb-2 d-block">
+            mobile
+          </span>
+          <input
+            type="tel"
+            name="email"
+            class="form-control rounded-1"
+            placeholder="Enter mobile"
+          />
+          <span class="input-header text-capitalize ps-2 mb-2 d-block">
+            message
+          </span>
+          <textarea
+            name="message"
+            class="form-control rounded-1"
+            rows="4"
+            placeholder="Enter your message"
+          ></textarea>
+          <input
+            type="submit"
+            value="Submit &gt;"
+            class="btn btn-green rounded-0 w-100 py-3"
+          />
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="d-flex justify-content-center align-items-center w-100 py-3 bg-black text-light"
+    >
+      <p class="mb-0">Made with ❤</p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
